@@ -173,9 +173,6 @@ for region in regions:
     for n in regions[region]:
         percents[region].append(n/(regionSum))
 
-print(percents)
-print(sum(percents["Johto"]))
-
 with open('polling.csv', 'w', newline='') as csv2:
     writer = csv.writer(csv2)
     for region in percents:
